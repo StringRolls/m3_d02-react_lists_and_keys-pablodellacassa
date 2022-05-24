@@ -11,7 +11,7 @@ function App() {
       {/* <List /> */}
       {/* <StudentList /> */}
       {/* <ProjectList /> */}
-      <MovieList />
+      {<MovieList /> }
     </div>
   );
 }

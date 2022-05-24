@@ -1,13 +1,17 @@
 // An array containing HTML elements
-const numbersList = [<li>1</li>, <li>2</li>, <li>3</li>, <li>4</li>];
+const numbersList = ["Luisa", "Adrian", "Samy", "Aleix"];
 
 function List() {
   return (
     <div className="list">
       <h2>List</h2>
-      {numbersList}
+      {numbersList.map((name, idx)=>(
+      <li key={idx}>{name}</li>
+      ))}
     </div>
   );
 }
 
 export default List;
+
+

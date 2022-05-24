@@ -1,14 +1,14 @@
 import React from 'react'
 
 function MovieCard(props) {
-  const { movie, clickToDelete } = props;
+  const { movie: {_id, title, director, IMDBRating, clickToDelete} } = props;
 
   return (
     <div className="MovieCard">
-      <h3>{movie.title}</h3>
-      <p>Director: {movie.director}</p>
-      <p>Rating: {movie.IMDBRating}</p>
-      <button onClick={ () => clickToDelete(movie._id) } className="btn-delete">
+      <h3>{title}</h3>
+      <p>Director: {director}</p>
+      <p>Rating: {IMDBRating}</p>
+      <button onClick={ () => clickToDelete(_id) } className="btn-delete">
         Delete 🗑
       </button>
     </div>
